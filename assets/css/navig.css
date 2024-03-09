@@ -6,3 +6,8 @@
       display: none;
     }
   }
+@media (min-width:800px){
+    #background{
+        width:100%;
+    }
+}
