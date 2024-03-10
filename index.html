@@ -35,12 +35,15 @@
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <!-- First Logo -->
-            <img id="logo1" style="width:80px" src="assets/img/logo.png" alt="First slide">
+            <!-- First Logo with URL -->
+            <a class="navbar-brand" href="https://mail.isical.ac.in/~iuprai/?q=node/17">
+              <img id="logo1" style="width:80px" src="assets/img/logo.png" alt="First slide">
+            </a>
 
-            <!-- Second Logo -->
-            <img id="logo2" style="width:80px" src="assets/img/iist_logo.png" alt="Second slide">
-
+            <!-- Second Logo with URL -->
+            <a class="navbar-brand" href="https://www.iist.ac.in/">
+                <img id="logo2" style="width:80px" src="assets/img/iist_logo.png" alt="Second slide">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
               <span class="icon-menu"></span>
@@ -60,12 +63,12 @@
                     Program
                 </a>
                 <div class="dropdown-menu" aria-labelledby="programDropdown">
-                    <a class="nav-link" href="#">Plenary Speakers</a>
-                    <a class="nav-link" href="#">Challenges</a>
-                    <a class="nav-link" href="#">Tutorials</a>
-                    <a class="nav-link" href="#">Workshops</a>
-                    <a class="nav-link" href="#">Student Research Symposium</a>
-                    <a class="nav-link" href="#">Schedule</a>
+                    <a class="nav-link" href="#program">Plenary Speakers</a>
+                    <a class="nav-link" href="#program">Challenges</a>
+                    <a class="nav-link" href="#program">Tutorials</a>
+                    <a class="nav-link" href="#program">Workshops</a>
+                    <a class="nav-link" href="#program">Student Research Symposium</a>
+                    <a class="nav-link" href="#program">Schedule</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -91,14 +94,15 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#team" id="InformationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#info" id="InformationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Information
                 </a>
-                 <div class="dropdown-menu" aria-labelledby="InformationDropdown">
-                    <a class="nav-link" href="#">Registration</a>
-                    <a class="nav-link" href="#">Travel information</a>
-                    <a class="nav-link" href="#">Accomodation</a>
-                    <a class="nav-link" href="#">Places To Visit</a>
+                 <div class="dropdown-menu" aria-labelledby="callsDropdown">
+                    <!-- <a class="nav-link" href="#">Call for Challenges</a> -->
+                    <a class="nav-link" href="#registration">Registration</a>
+                    <a class="nav-link" href="#travel-info">Travel Information</a>
+                    <a class="nav-link" href="#accommodation">Accommodation</a>
+                    <a class="nav-link" href="#places-to-visit">Places To Visit</a>
                 </div>
               </li>
               <!-- <li class="nav-item">
@@ -113,7 +117,12 @@
               </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="#sponsors">
-                  Sponsors & Partners
+                  Sponsors
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  Contact
                 </a>
               </li>
             </ul>
@@ -129,15 +138,13 @@
             <a class="dropdown-toggle" href="#program" id="programDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Program
             </a>
-            <div class="dropdown-menu" aria-labelledby="programDropdown">                    
-              <a class="page-scroll" href="#patrons">Plenary Speakers</a>
-              <a class="page-scroll" href="#patrons">Challenges</a>
-              <a class="page-scroll" href="#patrons">Tutorials</a>
-              <a class="page-scroll" href="#patrons">Workshops</a>
-              <a class="page-scroll" href="#patrons">Student Research Symposium</a>
-              <a class="page-scroll" href="#patrons">Schedule</a>
-
-
+            <div class="dropdown-menu" aria-labelledby="programDropdown">
+                <a class="page-scroll" href="#program">Plenary Speakers</a>
+                <a class="page-scroll" href="#program">Challenges</a>
+                <a class="page-scroll" href="#program">Tutorials</a>
+                <a class="page-scroll" href="#program">Workshops</a>
+                <a class="page-scroll" href="#program">Student Research Symposium</a>
+                <a class="page-scroll" href="#program">Schedule</a>
             </div>
           </li>
           <li>
@@ -159,16 +166,27 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="dropdown-toggle" href="#calls" id="informationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Information</a>
-            <div class="dropdown-menu" aria-labelledby="informationDropdown">
-              <a class="page-scroll" href="#">Registration</a>
-              <a class="page-scroll" href="#">Travel Information</a>
-              <a class="page-scroll" href="#">Accomodation</a>
-              <a class="page-scroll" href="#">Places To Visit</a>
-          </div>
+            <a class="dropdown-toggle" href="#info" id="infoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Information
+            </a>
+            <div class="dropdown-menu" aria-labelledby="infoDropdown">
+                <a class="page-scroll" href="#registration">Registration</a>
+                <a class="page-scroll" href="#travel-info">Travel Information</a>
+                <a class="page-scroll" href="#accommodation">Accommodation</a>
+                <a class="page-scroll" href="#places-to-visit">Places To Visit</a>
+            </div>
+          </li>
+          <!-- <li>
+            <a class="page-scroll" href="#gallery">Gallery</a>
           </li>
           <li>
-            <a class="page-scroll" href="#sponsors">Sponsors & Partners</a>
+            <a class="page-scroll" href="#faq">Faq</a>
+          </li> -->
+          <li>
+            <a class="page-scroll" href="#sponsors">Sponsors</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">Contact</a>
           </li>
         </ul>
         <!-- Mobile Menu End -->
@@ -184,7 +202,7 @@
             <div class="carousel-caption d-md-block">
               <h1 class="wow fadeInDown heading" data-wow-delay=".4s">NCVPRIPG-2024</h1>
               <p class="wow fadeInDown" data-wow-delay=".4s">19-21 July, 2024</p>
-              <p class="wow fadeInDown" data-wow-delay=".4s">9<sup>th</sup> National Conference on Computer Vision, Pattern Recognition, Image Processing and Graphics</p>
+              <p class="wow fadeInDown" data-wow-delay=".4s"> The 9<sup>th</sup> National Conference on Computer Vision, Pattern Recognition, Image Processing and Graphics</p>
             </div>
           </div>
         </div>
@@ -564,6 +582,58 @@
       </div>
     </div>
 
+    <!-- Steering Committee -->
+    <div id="steering-committee" class="row">
+      <div class="col-12 text-center">
+        <h2 class="call-type-title wow fadeInUp" data-wow-delay="0.2s">Steering Committee</h2>
+      </div>
+      <!-- Include the members of the steering committee here -->
+    </div>
+
+    <!-- Patron -->
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="committee-title wow fadeInUp" data-wow-delay="0.2s">Patron</h2>
+        <table class="table table-borderless" style="text-align: center;">
+          <tbody>
+            <tr>
+              <td>
+                <img src="assets/img/committee/s_somanath.jpeg" alt="" style="width: 150px; height: 150px;">
+                <br><strong>Shri S Somanath</strong><br>Secretary, Department of Space/ Chairman, ISRO, Chairman Governing
+                Council, IIST
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- National Organizing Committee -->
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2 class="committee-title wow fadeInUp" data-wow-delay="0.2s">National Organizing Committee</h2>
+        <table class="table table-borderless" style="text-align: center;">
+          <tbody>
+            <tr>
+              <td>
+                <img src="assets/img/committee/s_unnikrishnan_nair.jpeg" alt="" style="width: 150px; height: 150px;">
+                <br><strong>Dr. S Unnikrishnan Nair</strong><br>Director, IIST/ VSSC
+              </td>
+
+              <td>
+                <img src="assets/img/committee/v_narayanan.jpeg" alt="" style="width: 150px; height: 150px;">
+                <br><strong>Dr. V Narayanan</strong><br>Director LPSC
+              </td>
+
+              <td>
+                <img src="assets/img/committee/e_s_padmakumar.jpeg" alt="" style="width: 150px; height: 150px;">
+                <br><strong>Dr. E S Padmakumar</strong><br>Director, IISU
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
     <!-- General Chair -->
     <div class="row justify-content-center">
       <div class="col-md-6">
@@ -571,6 +641,10 @@
         <table class="table table-borderless" style="text-align: center;">
           <tbody>
             <tr>
+              <td>
+                <img src="assets/img/committee/s_unnikrishnan_nair.jpeg" alt="" style="width: 150px; height: 150px;">
+                <br><strong>Dr. S Unnikrishnan Nair</strong><br>Director, IIST/ VSSC
+              </td>
               <td>
                 <img src="assets/img/committee/pj_narayanan.png" alt="" style="width: 150px; height: 150px;">
                 <br><strong>P J Narayanan</strong><br>Professor & Director, IIIT Hyderabad
@@ -867,16 +941,22 @@
     <!-- Contact Us Section End -->
 
     <!-- Footer Section Start -->
-    <footer class="footer-area section-padding">
+    <footer id="contact" class="footer-area section-padding">
       <div class="container">
         <div class="row">
           <!-- First Column with Logos -->
           <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
-            <!-- First Logo -->
-            <img style="width:80px" src="assets/img/logo.png" alt="First slide">
-            <!-- Second Logo -->
-            <img style="width:80px" src="assets/img/iist_logo.png" alt="Second slide">
-          </div>
+            <!-- First Logo with URL -->
+            <a href="https://mail.isical.ac.in/~iuprai/?q=node/17">
+                <img style="width:80px" src="assets/img/logo.png" alt="First slide">
+            </a>
+        
+            <!-- Second Logo with URL -->
+            <a href="https://www.iist.ac.in/">
+                <img style="width:80px" src="assets/img/iist_logo.png" alt="Second slide">
+            </a>
+        </div>
+        
     
           <!-- Second Column (Empty) -->
           <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
