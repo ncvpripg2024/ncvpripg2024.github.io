@@ -16,3 +16,11 @@
         height:300px;
     }
 }
+
+.dropdown-menu{
+  background: black !important;
+}
+
+.nav-link{
+  color: white !important;
+}
