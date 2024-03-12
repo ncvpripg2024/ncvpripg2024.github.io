@@ -31,26 +31,29 @@
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
       <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar" style="background: #00000080;">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <!-- First Logo with URL -->
+            <div style ="width: 160px; ">
+                <!-- First Logo with URL -->
             <a class="navbar-brand" href="https://www.iist.ac.in/">
-                <img id="logo2" style="width:60px" src="assets/img/iist_logo.png" alt="First slide">
-            </a>
-            <!-- Second Logo with URL -->
-            <a class="navbar-brand" href="https://www.iisertvm.ac.in/">
-              <img id="logo1" style="width:60px" src="assets/img/iiser_logo.png" alt="Second slide">
-            </a>
-            <!-- Third Logo with URL -->
-            <a class="navbar-brand" href="https://duk.ac.in/">
-              <img id="logo1" style="width:60px" src="assets/img/duk_logo.png" alt="Third slide">
-            </a>
-            <!-- Fourth Logo with URL -->
-            <a class="navbar-brand" href="https://mail.isical.ac.in/~iuprai/?q=node/17">
-              <img id="logo1" style="width:60px" src="assets/img/logo.png" alt="Fourth slide">
-            </a>
+              <img id="logo2" style="width:60px" src="assets/img/iist_logo.png" alt="First slide">
+          </a>
+          <!-- Second Logo with URL -->
+          <a class="navbar-brand" href="https://www.iisertvm.ac.in/">
+            <img id="logo1" style="width:60px" src="assets/img/iiser_logo.png" alt="Second slide">
+          </a>
+          <!-- Third Logo with URL -->
+          <a class="navbar-brand" href="https://duk.ac.in/">
+            <img id="logo1" style="width:60px" src="assets/img/duk_logo.png" alt="Third slide">
+          </a>
+          <!-- Fourth Logo with URL -->
+          <a class="navbar-brand" href="https://mail.isical.ac.in/~iuprai/?q=node/17">
+            <img id="logo1" style="width:60px" src="assets/img/logo.png" alt="Fourth slide">
+          </a>
+            </div>
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
               <span class="icon-menu"></span>
@@ -139,7 +142,7 @@
         <!-- Mobile Menu Start -->
         <ul class="mobile-menu">
           <li>
-            <a class="page-scrool" href="#header-wrap">Home</a>
+            <a class="page-scro" href="#header-wrap">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="dropdown-toggle" href="#program" id="programDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -158,7 +161,7 @@
             <a class="page-scroll" href="#committee">Committee</a>
           </li>
           <li>
-            <a class="page-scrool" href="#about">About</a>
+            <a class="page-scroll" href="#about">About</a>
           </li>
           <li class="nav-item dropdown">
             <a class="dropdown-toggle" href="#calls" id="callsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1215,6 +1218,15 @@
           $('.dropdown-menu').collapse('hide');
         });
       });
+      
     </script>
+    <script>
+      $(document).ready(function(){
+        $('.page-scroll').click(function(){
+          console.log('hi');
+        });
+      });
+    </script>
+    
   </body>
 </html>
