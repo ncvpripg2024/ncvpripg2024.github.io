@@ -2,6 +2,9 @@
 .dropdown-menu{
   background: black !important;
 }
+.align-fix{
+  padding-top: 75px
+}
 
 .nav-link{
   color: white !important;
