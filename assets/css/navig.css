@@ -1,21 +1,3 @@
-@media (max-width: 800px) {
-    #logo1 {
-      display: none;
-    }
-    #logo2 {
-      display: none;
-    }
-  }
-@media (min-width:800px){
-    #background{
-        width:100%;
-    }
-}
-@media (max-width:800px){
-    #background{
-        height:300px;
-    }
-}
 
 .dropdown-menu{
   background: black !important;
@@ -33,4 +15,12 @@
 }
 .center{
   text-align: left;
+}
+@media screen and (max-width: 390px) {
+  .navbar-brand{
+    width: 30px !important;
+  }
+  .logos{
+    width: 45px !important;
+  }
 }
