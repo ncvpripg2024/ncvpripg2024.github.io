@@ -169,8 +169,8 @@
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="row time-countdown justify-content-center wow fadeInUp" data-wow-delay="0.2s">
               <ul>
-                <li>Mar 9 2024: <a href="#call-for-challenges">Call for Challenges</a> is up.</li>
-              <li>Mar 8 2024: <a href="#call-for-tutorials">Call for Tutorials</a>, <a href="#call-for-workshops">Call for Workshops</a>, <a href="#call-for-sponsorship">Call for Sponsorship</a> and <a href="#call-for-abstract">Call for Abstract</a> are up.</li>
+                <li>Mar 9 2024: <a href="call_for_challenges.html#call-for-challenges">Call for Challenges</a> is up.</li>
+              <li>Mar 8 2024: <a href="call_for_tutorials.html#call-for-tutorials">Call for Tutorials</a>, <a href="call_for_workshops.html#call-for-workshops">Call for Workshops</a>, <a href="call_for_sponsorship.html#call-for-sponsorship">Call for Sponsorship</a> and <a href="call_for_abstract.html#call-for-abstract">Call for Abstract</a> are up.</li>
               <li>Mar 7 2024: Website is up</li>  
               </ul>
               
@@ -180,6 +180,148 @@
       </div>
     </section>
     <!-- Coundown Section End -->
+
+<!-- Important dates all at one place-->
+<section class="important-dates section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="wow fadeInDown text-center" data-wow-delay="0.2s">Important Dates</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>Date</th>
+              <th>Days Left</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="3"><strong>Challenges</strong></td>
+            </tr>
+            <tr>
+              <td>Challenges Proposal Submission Deadline</td>
+              <td>March 21, 2024</td>
+              <td id="challengesProposalCountdown"></td>
+            </tr>
+            <tr>
+              <td>Notification of Selection</td>
+              <td>March 30, 2024</td>
+              <td id="selectionNotificationCountdown"></td>
+            </tr>
+            <tr>
+              <td>Web Posting of Challenges</td>
+              <td>April 15, 2024</td>
+              <td id="postingChallengesCountdown"></td>
+            </tr>
+            <tr>
+              <td>Opening Date for Submission to Challenges</td>
+              <td>April 25, 2024</td>
+              <td id="openingSubmissionChallengesCountdown"></td>
+            </tr>
+            <tr>
+              <td>Closing Date for Submission to Challenges</td>
+              <td>June 5, 2024</td>
+              <td id="closingSubmissionChallengesCountdown"></td>
+            </tr>
+            <tr>
+              <td>Announcement of Challenge Winner</td>
+              <td>July 1, 2024</td>
+              <td id="winnerAnnouncementCountdown"></td>
+            </tr>
+            <tr>
+              <td>Registration Deadline for Challenge Attendees</td>
+              <td>July 1, 2024</td>
+              <td id="registrationDeadlineCountdown"></td>
+            </tr>
+            <tr>
+              <td colspan="3"><strong>Tutorials</strong></td>
+            </tr>
+            <tr>
+              <td>Deadline for submitting proposals</td>
+              <td>April 7, 2024</td>
+              <td id="tutorialProposalsCountdown"></td>
+            </tr>
+            <tr>
+              <td>Notification of accepted proposals</td>
+              <td>April 15, 2024</td>
+              <td id="acceptedProposalsCountdown"></td>
+            </tr>
+            <tr>
+              <td colspan="3"><strong>Workshops</strong></td>
+            </tr>
+            <tr>
+              <td>Challenges Proposal Submission Deadline</td>
+              <td>April 7, 2024</td>
+              <td id="workshopSubmissionCountdown"></td>
+            </tr>
+            <tr>
+              <td>Notification of Selection</td>
+              <td>April 15, 2024</td>
+              <td id="workshopSelectionNotificationCountdown"></td>
+            </tr>
+            <tr>
+              <td>CFP for Web Posting of Workshop</td>
+              <td>April 30, 2024</td>
+              <td id="workshopCFPCountdown"></td>
+            </tr>
+            <tr>
+              <td>Workshop Paper Submission Deadline</td>
+              <td>May 30, 2024</td>
+              <td id="workshopPaperSubmissionCountdown"></td>
+            </tr>
+            <tr>
+              <td>Paper Acceptance Notification</td>
+              <td>June 15, 2024</td>
+              <td id="paperAcceptanceNotificationCountdown"></td>
+            </tr>
+            <tr>
+              <td>Camera Ready</td>
+              <td>July 1, 2024</td>
+              <td id="cameraReadyCountdown"></td>
+            </tr>
+            <tr>
+              <td>Author Registration for Accepted Papers</td>
+              <td>July 1, 2024</td>
+              <td id="authorRegistrationCountdown"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// Function to calculate the number of days left
+function getDaysLeft(targetDate) {
+  const now = new Date();
+  const difference = targetDate.getTime() - now.getTime();
+
+  const daysLeft = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+  return daysLeft;
+}
+
+// Set the number of days left for each event
+document.getElementById('challengesProposalCountdown').innerText = getDaysLeft(new Date('March 21, 2024'));
+document.getElementById('selectionNotificationCountdown').innerText = getDaysLeft(new Date('March 30, 2024'));
+document.getElementById('postingChallengesCountdown').innerText = getDaysLeft(new Date('April 15, 2024'));
+document.getElementById('openingSubmissionChallengesCountdown').innerText = getDaysLeft(new Date('April 25, 2024'));
+document.getElementById('closingSubmissionChallengesCountdown').innerText = getDaysLeft(new Date('June 5, 2024'));
+document.getElementById('winnerAnnouncementCountdown').innerText = getDaysLeft(new Date('July 1, 2024'));
+document.getElementById('registrationDeadlineCountdown').innerText = getDaysLeft(new Date('July 1, 2024'));
+document.getElementById('tutorialProposalsCountdown').innerText = getDaysLeft(new Date('April 7, 2024'));
+document.getElementById('acceptedProposalsCountdown').innerText = getDaysLeft(new Date('April 15, 2024'));
+document.getElementById('workshopSubmissionCountdown').innerText = getDaysLeft(new Date('April 7, 2024'));
+document.getElementById('workshopSelectionNotificationCountdown').innerText = getDaysLeft(new Date('April 15, 2024'));
+document.getElementById('workshopCFPCountdown').innerText = getDaysLeft(new Date('April 30, 2024'));
+document.getElementById('workshopPaperSubmissionCountdown').innerText = getDaysLeft(new Date('May 30, 2024'));
+document.getElementById('paperAcceptanceNotificationCountdown').innerText = getDaysLeft(new Date('June 15, 2024'));
+document.getElementById('cameraReadyCountdown').innerText = getDaysLeft(new Date('July 1, 2024'));
+document.getElementById('authorRegistrationCountdown').innerText = getDaysLeft(new Date('July 1, 2024'));
+// Add more countdowns for other events as needed
+</script>
 
 <!-- About Section Start -->
 <section id="about" class="section-padding">
