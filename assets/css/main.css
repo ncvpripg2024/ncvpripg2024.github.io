@@ -2209,3 +2209,8 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #fff;
   border-color: #fff;
 }
+.flex-container {
+  display: flex;
+  justify-content: space-between; /* Distributes space between logos and text */
+  align-items: center; /* Aligns items vertically in the center */
+}
