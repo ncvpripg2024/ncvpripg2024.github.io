@@ -471,14 +471,19 @@
 </section>
 
 <script>
-// Function to calculate the number of days left
+// Function to calculate the number of days left or show if the date is due
 function getDaysLeft(targetDate) {
   const now = new Date();
   const difference = targetDate.getTime() - now.getTime();
 
-  const daysLeft = Math.floor(difference / (1000 * 60 * 60 * 24));
-
-  return daysLeft;
+  // If the target date is in the past, return "Date Due"
+  if (difference < 0) {
+    return "Date Due";
+  } else {
+    // Otherwise, calculate the number of days left
+    const daysLeft = Math.floor(difference / (1000 * 60 * 60 * 24));
+    return daysLeft;
+  }
 }
 
 // Set the number of days left for each event
