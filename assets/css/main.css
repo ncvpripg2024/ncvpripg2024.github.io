@@ -2234,6 +2234,10 @@ a.back-to-top:hover, a.back-to-top:focus {
 .registration-table tbody tr:hover {
   background-color: #e2e2e2;
 }
+.registration-table tbody tr td:first-child {
+  width: 145px; /* Adjust the width as needed */
+}
+
 /* Style for the note */
 .registration-note {
   margin-top: 20px; /* Adjust as needed */
