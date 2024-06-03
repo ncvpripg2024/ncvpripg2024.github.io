@@ -2246,3 +2246,12 @@ a.back-to-top:hover, a.back-to-top:focus {
   margin-top: 20px; /* Adjust as needed */
   text-align: left;
 }
+
+.outlined-text {
+  color: white;
+  text-shadow:
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
