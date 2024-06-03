@@ -2,7 +2,12 @@
 html {
   overflow-x: hidden;
 }
-
+.colourfont{
+  color: black !important;
+}
+#conferenceCarousel{
+  height: 400px !important;
+}
 body {
   background: #fff;
   font-size: 15px;
