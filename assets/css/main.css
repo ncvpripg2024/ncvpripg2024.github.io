@@ -2221,25 +2221,32 @@ a.back-to-top:hover, a.back-to-top:focus {
   width: 100%;
   border-collapse: collapse;
 }
+
 .registration-table th, .registration-table td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
+
 .registration-table th {
   background-color: #333;
   color: #fff; /* Text color for header */
   font-weight: bold;
 }
+
 .registration-table tbody tr:nth-child(even) {
   background-color: #f9f9f9;
 }
+
 .registration-table tbody tr:hover {
   background-color: #e2e2e2;
 }
-.registration-table tbody tr td:first-child {
-  width: 145px; /* Adjust the width as needed */
+
+/* Adjust the width of the first column for both header and body */
+.registration-table th:first-child, .registration-table td:first-child {
+  width: 300px; /* Adjust the width as needed */
 }
+
 
 /* Style for the note */
 .registration-note {
