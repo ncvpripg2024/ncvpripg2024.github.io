@@ -31,3 +31,27 @@
     }
 }
 
+.btn-primary .text-primary {
+    background-color: rgb(0, 156, 146);
+    border-color: rgb(0, 156, 146);
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary:active {
+    background-color: rgb(0, 130, 122); /* Adjust the hover color as needed */
+    border-color: rgb(0, 130, 122); /* Adjust the hover border color as needed */
+  }
+  
+  .btn-secondary {
+    background-color: rgb(112, 182, 10);
+    border-color: rgb(112, 182, 10);
+  }
+  
+  .btn-secondary:hover,
+  .btn-secondary:focus,
+  .btn-secondary:active {
+    background-color: rgb(94, 153, 8); /* Adjust the hover color as needed */
+    border-color: rgb(94, 153, 8); /* Adjust the hover border color as needed */
+  }
+  
