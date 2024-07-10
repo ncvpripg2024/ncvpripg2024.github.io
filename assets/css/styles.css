@@ -55,4 +55,27 @@
     border-color: rgb(94, 153, 8); /* Adjust the hover border color as needed */
   }
 
+  .speaker-info {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%; /* Make the pop-up round */
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a slight shadow */
+    display: none; /* Hide initially */
+    text-align: center;
+  }
+  
+  .speaker-info img {
+    border-radius: 50%; /* Make the image round inside the pop-up */
+    width: 80px;
+    height: 80px;
+  }
+  
+  .registration-table td:hover .speaker-info {
+    display: block; /* Show pop-up on hover */
+    position: relative; /* Needed for proper positioning */
+    top: calc(100% + 5px); /* Position below the speaker name */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+  }
   
