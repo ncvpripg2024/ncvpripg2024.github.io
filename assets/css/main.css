@@ -2253,6 +2253,11 @@ a.back-to-top:hover, a.back-to-top:focus {
   margin-top: 20px; /* Adjust as needed */
   text-align: left;
 }
+.registration-note2 {
+  margin-top: 20px; /* Adjust as needed */
+  text-align: left;
+  font-size: 10px;
+}
 
 .outlined-text {
   color: white;
